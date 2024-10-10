@@ -1,0 +1,196 @@
+body {
+    font-family: 'Pacifico', cursive;
+    font-weight: 500; /* Font tebal */    
+    background-color: #b0caef; /* Warna latar belakang halaman */
+    color: #333; /* Warna teks */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.background-box { /* Box Latar Belakang */
+    background-color: #c3dbf3; /* Warna latar belakang box */
+    padding: 5px; /* Ruang di sekitar konten */
+    border-radius: 10px; /* Sudut lebih halus */
+    box-shadow: 0 10px 20px rgb(40, 21, 21); /* Efek bayangan */
+    width: 70%; /* Lebar box diatur menjadi 70% dari container */
+    margin: 40px auto; /* Pusatkan box dengan margin */
+    display: flex; /* Menggunakan flexbox */
+    flex-direction: column; /* Mengatur arah flex menjadi kolom */
+    align-items: center; /* Pusatkan konten secara horizontal */
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    text-align: center; /* Teks diatur rata tengah */
+}
+
+.header {
+    font-family: 'Baloo', cursive; /* Menggunakan font untuk header */
+    font-weight: 700; /* Font tebal */
+    font-size: 36px; /* Ukuran font header */
+    color: #f5f5f5; /* Warna teks header */
+    margin-bottom: 20px; /* Ruang di bawah header */
+    background-color: #69788d; /* Warna latar belakang header */
+    padding: 15px; /* Ruang di sekitar teks */
+    border-radius: 10px; /* Sudut lebih halus */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.486); /* Efek bayangan */
+    width: 70%; /* Ubah lebar header sesuai keinginan */
+    margin: 0 auto; /* Pusatkan header */
+    border: 10px solid rgb(241, 241, 241);
+    padding-bottom: 20px;
+}
+
+.birthday-box {
+    border: none; /* Menghapus border pada box */
+    border-radius: 10px; /* Sudut lebih halus */
+    padding: 10px; /* Mengurangi padding untuk memperkecil box */
+    background-color: #f6f6f6; /* Warna latar belakang box */
+    margin: 20px auto; /* Pusatkan box */
+    width: 70%; /* Lebar box diatur menjadi 50% dari container */
+    box-shadow: 0 4px 8px rgba(83, 81, 81, 0.897); /* Efek bayangan */
+}
+
+.quote {
+    font-style: italic; /* Miringkan teks kutipan */
+    color: #555; /* Warna teks kutipan */
+}
+
+.page-options {
+    display: flex; /* Menggunakan flexbox untuk pilihan halaman */
+    justify-content: center; /* Pusatkan pilihan halaman */
+    flex-wrap: wrap; /* Agar dapat beradaptasi dengan ukuran layar */
+    margin-top: 20px; /* Ruang di atas pilihan halaman */
+}
+
+.button {
+    display: inline-block; /* Menampilkan sebagai blok inline */
+    margin: 10px; /* Margin antar tombol */
+    padding: 10px 20px; /* Ruang di dalam tombol */
+    background-color: #eaeaea; /* Warna latar belakang tombol */
+    color: #3d3d3d; /* Warna teks tombol */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    border-radius: 25px; /* Sudut lebih halus */
+    border: 7px solid rgb(146, 174, 199);
+}
+
+.button:hover {
+    background-color: #fff9b6; /* Warna saat hover pada tombol */
+    border-color: #ffffff;
+}
+
+.gallery {
+    display: grid; /* Menggunakan grid untuk galeri */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Mengatur kolom secara otomatis */
+    gap: 15px; /* Jarak antar gambar */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%; /* Lebar gambar 100% dari kolom */
+    border-radius: 10px; /* Sudut lebih halus pada gambar */
+    margin-top: 10px;
+}
+
+.cake-gif {
+    width: 200px; /* Lebar gambar kue */
+    margin-top: 10px; /* Ruang di atas dan bawah gambar kue */
+}
+
+/* Styling untuk Quiz */
+.quiz-section {
+    margin-top: 20px; /* Ruang di atas section quiz */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang quiz */
+    padding: 5px; /* Ruang di dalam quiz */
+    border-radius: 10px; /* Sudut lebih halus */
+    width: 80%; /* Lebar section quiz */
+    margin: 20px auto; /* Pusatkan section */
+    text-align: center; /* Rata tengah teks */
+    box-shadow: 0 10px 20px rgba(124, 123, 123, 0.742); /* Efek bayangan */
+}
+
+.quiz-question {
+    margin: 20px 0; /* Ruang di atas dan bawah pertanyaan kuis */
+}
+
+.quiz-question button {
+    margin: 15px; /* Ruang antar tombol */
+    padding: 10px 15px; /* Ruang di dalam tombol */
+    background-color: #708a9a; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut lebih halus */
+    cursor: pointer; /* Tangan saat hover */
+}
+
+.quiz-question button:hover {
+    background-color: #c06a6a; /* Warna saat hover pada tombol */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(117, 117, 117);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 10; /* Pastikan tombol di atas slideshow */
+}
+
+.prev {
+    left: 0; /* Pindahkan tombol prev ke kiri */
+}
+
+.next {
+    right: 30; /* Pindahkan tombol next ke kanan */
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dots {
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #767676;
+}
+
